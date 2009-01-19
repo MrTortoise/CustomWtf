@@ -41,7 +41,7 @@
   <ItemGroup>
     <Reference Include="Ionic.Utils.Zip, Version=1.6.3.14, Culture=neutral, PublicKeyToken=c551e179877da246, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ZipLibrary\Ionic.Utils.Zip.dll</HintPath>
+      <HintPath>ZipLibrary\Ionic.Utils.Zip.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
