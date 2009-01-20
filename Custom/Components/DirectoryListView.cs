@@ -71,6 +71,13 @@ namespace Custom.Components
 			}	
 		}
 
+		private void DirectoryListView_Resize(object sender, EventArgs e)
+		{
+			mListView.Width = this.Width - 10;
+			mListView.Height  = this.Height - 37;
+			mListView.Invalidate();
+		}
+
 
 	}
 }

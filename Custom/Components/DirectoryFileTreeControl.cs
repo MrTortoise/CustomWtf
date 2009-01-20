@@ -43,8 +43,22 @@ namespace Custom.Components
 			}
 			set
 			{
+				
+
 				if (value != null)
-					mDirectoryList = value;
+				{
+					if (mDirectoryList != null)
+						mDirectoryList = null;
+					mDirectoryList = new List<FileDirectoryItem>();
+
+					foreach (string s in value)
+					{
+						FileDirectoryItem fd = new FileDirectoryItem();
+						fd.FullPath = s;
+
+						mDirectoryList.Add(fd);
+					}
+				}					
 			}
 		}
 
@@ -88,31 +102,11 @@ namespace Custom.Components
 
 			foreach (FileDirectoryItem fd in mDirectoryList)
 			{
-				if (fd.has
-
-			}
-			foreach (string s in mDirectoryList)
-			{
-				// test to see if string is a directory
-				if (s.EndsWith("/"))
+				if (fd.HasDirectory && !fd.HasFileName)
 				{
-					// test to see if part of the root path
-					if (s.StartsWith(root))
-					{
-						// extract names of directories that are not sub directories
-						// of any directories in the root path
-						int rootCount = root.Count("/");
-						int dirCount = s.Count("/");
-
-						// a directory in root will only have 1 extra "/"
-						if (rootCount==(dirCount-1))
-						{
-							// extract the directory name from the string
-						}
-							
-					}
+					retVal.Add(fd.FullPath);
 				}
-			}
+			} 	
 
 			return retVal;
 		}

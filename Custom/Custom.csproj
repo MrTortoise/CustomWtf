@@ -59,6 +59,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\DirectoryFileTreeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\DirectoryFileTreeControl.Designer.cs">
+      <DependentUpon>DirectoryFileTreeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\DirectoryListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\DirectoryListView.Designer.cs">
+      <DependentUpon>DirectoryListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ImageList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ImageList.Designer.cs">
+      <DependentUpon>ImageList.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfigFile\ConfigFile.cs" />
     <Compile Include="ConfigFile\ConfigFileLoader.cs" />
     <Compile Include="ConfigFile\ConfigFileValidator.cs" />
@@ -71,6 +89,8 @@
     <Compile Include="Dialogue\DialogueSelectDirectory.Designer.cs">
       <DependentUpon>DialogueSelectDirectory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Exceptions\ArgumentInvalidPathFormatException.cs" />
+    <Compile Include="ExtensionMethods\Extensions.cs" />
     <Compile Include="Interfaces\GCNoReferencesToRemoveException.cs" />
     <Compile Include="Interfaces\GCObjectStillHasReferencesException.cs" />
     <Compile Include="Exceptions\ArgumentAlreadyExistsException.cs" />
@@ -83,11 +103,43 @@
     <Compile Include="Maths\RotationManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Zip\ZipFile.cs" />
+    <Compile Include="Zip\ZipFileOpenException.cs" />
+    <Compile Include="Zip\ZipItem.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Components\DirectoryFileTreeControl.resx">
+      <DependentUpon>DirectoryFileTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\DirectoryListView.resx">
+      <DependentUpon>DirectoryListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ImageList.resx">
+      <DependentUpon>ImageList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialogue\DialogueSelectDirectory.resx">
       <DependentUpon>DialogueSelectDirectory.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Components\.svn\all-wcprops" />
+    <None Include="Components\.svn\entries" />
+    <None Include="Components\.svn\format" />
+    <None Include="Components\.svn\text-base\DirectoryFileTreeControl.cs.svn-base" />
+    <None Include="Components\.svn\text-base\DirectoryFileTreeControl.Designer.cs.svn-base" />
+    <None Include="Components\.svn\text-base\DirectoryFileTreeControl.resx.svn-base" />
+    <None Include="Components\.svn\text-base\DirectoryListView.cs.svn-base" />
+    <None Include="Components\.svn\text-base\DirectoryListView.Designer.cs.svn-base" />
+    <None Include="Components\.svn\text-base\DirectoryListView.resx.svn-base" />
+    <None Include="Components\.svn\text-base\ImageList.cs.svn-base" />
+    <None Include="Components\.svn\text-base\ImageList.Designer.cs.svn-base" />
+    <None Include="Components\.svn\text-base\ImageList.resx.svn-base" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\.svn\prop-base\" />
+    <Folder Include="Components\.svn\props\" />
+    <Folder Include="Components\.svn\tmp\prop-base\" />
+    <Folder Include="Components\.svn\tmp\props\" />
+    <Folder Include="Components\.svn\tmp\text-base\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

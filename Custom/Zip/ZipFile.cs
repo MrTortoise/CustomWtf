@@ -6,6 +6,7 @@ using System.IO;
 
 using Custom.Interfaces;
 using Custom.ExtensionMethods;
+using Custom.Exceptions;
 
 using Ionic.Utils.Zip;
 

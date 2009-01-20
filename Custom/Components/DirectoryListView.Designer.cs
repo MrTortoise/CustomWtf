@@ -44,9 +44,10 @@
 						| System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
 			this.mListView.LargeImageList = this.LargeImageList;
-			this.mListView.Location = new System.Drawing.Point(4, 28);
+			this.mListView.Location = new System.Drawing.Point(5, 34);
+			this.mListView.Margin = new System.Windows.Forms.Padding(4);
 			this.mListView.Name = "mListView";
-			this.mListView.Size = new System.Drawing.Size(218, 305);
+			this.mListView.Size = new System.Drawing.Size(289, 374);
 			this.mListView.SmallImageList = this.smallImageList;
 			this.mListView.TabIndex = 0;
 			this.mListView.UseCompatibleStateImageBehavior = false;
@@ -77,7 +78,7 @@
             this.toolStripButton1});
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip1.Name = "toolStrip1";
-			this.toolStrip1.Size = new System.Drawing.Size(226, 25);
+			this.toolStrip1.Size = new System.Drawing.Size(301, 27);
 			this.toolStrip1.TabIndex = 2;
 			this.toolStrip1.Text = "toolStrip1";
 			// 
@@ -86,19 +87,21 @@
 			this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
 			this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButton1.Name = "toolStripButton1";
-			this.toolStripButton1.Size = new System.Drawing.Size(68, 22);
+			this.toolStripButton1.Size = new System.Drawing.Size(96, 24);
 			this.toolStripButton1.Text = "Toggle View";
 			this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
 			// 
 			// DirectoryListView
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.Controls.Add(this.toolStrip1);
 			this.Controls.Add(this.mListView);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "DirectoryListView";
-			this.Size = new System.Drawing.Size(226, 338);
+			this.Size = new System.Drawing.Size(301, 416);
+			this.Resize += new System.EventHandler(this.DirectoryListView_Resize);
 			this.toolStrip1.ResumeLayout(false);
 			this.toolStrip1.PerformLayout();
 			this.ResumeLayout(false);

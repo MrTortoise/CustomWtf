@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Custom.ExtensionMethods;
 using Custom.IO;
+using Custom.Exceptions;
 
 namespace Custom.Zip
 {
