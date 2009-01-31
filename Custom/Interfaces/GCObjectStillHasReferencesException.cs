@@ -7,17 +7,21 @@ namespace Custom.Interfaces
 {
 	public class GCObjectStillHasReferencesException   :ApplicationException 
 	{
-		public object Source;
 
-		        public GCObjectStillHasReferencesException()
+			
+
+		public GCObjectStillHasReferencesException()
         {         }
 
-        public GCObjectStillHasReferencesException(string message, object theSource)
-            :base(message)
-				{ Source = theSource; }
+		public object SouceObject
+		{ get { return Source; } }
 
-		public GCObjectStillHasReferencesException(string message,object theSource, Exception inner)
+        public GCObjectStillHasReferencesException(string message)
+            :base(message)
+				{  }
+
+		public GCObjectStillHasReferencesException(string message, Exception inner)
             : base(message, inner)
-		{ Source = theSource; }
+		{  }
 	}
 }

@@ -7,17 +7,17 @@ namespace Custom.Interfaces
 {
 	public class GCNoReferencesToRemoveException :ApplicationException 
 	{
-		public object Source;
+		
 
 		        public GCNoReferencesToRemoveException()
         {         }
 
-        public GCNoReferencesToRemoveException(string message, object theSource)
+        public GCNoReferencesToRemoveException(string message)
             :base(message)
-				{ Source = theSource; }
+				{  }
 
-		public GCNoReferencesToRemoveException(string message,object theSource, Exception inner)
+		public GCNoReferencesToRemoveException(string message, Exception inner)
             : base(message, inner)
-		{ Source = theSource; }
+		{  }
 	}
 }

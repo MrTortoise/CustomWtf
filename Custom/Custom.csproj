@@ -120,27 +120,6 @@
       <DependentUpon>DialogueSelectDirectory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Components\.svn\all-wcprops" />
-    <None Include="Components\.svn\entries" />
-    <None Include="Components\.svn\format" />
-    <None Include="Components\.svn\text-base\DirectoryFileTreeControl.cs.svn-base" />
-    <None Include="Components\.svn\text-base\DirectoryFileTreeControl.Designer.cs.svn-base" />
-    <None Include="Components\.svn\text-base\DirectoryFileTreeControl.resx.svn-base" />
-    <None Include="Components\.svn\text-base\DirectoryListView.cs.svn-base" />
-    <None Include="Components\.svn\text-base\DirectoryListView.Designer.cs.svn-base" />
-    <None Include="Components\.svn\text-base\DirectoryListView.resx.svn-base" />
-    <None Include="Components\.svn\text-base\ImageList.cs.svn-base" />
-    <None Include="Components\.svn\text-base\ImageList.Designer.cs.svn-base" />
-    <None Include="Components\.svn\text-base\ImageList.resx.svn-base" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Components\.svn\prop-base\" />
-    <Folder Include="Components\.svn\props\" />
-    <Folder Include="Components\.svn\tmp\prop-base\" />
-    <Folder Include="Components\.svn\tmp\props\" />
-    <Folder Include="Components\.svn\tmp\text-base\" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
