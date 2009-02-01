@@ -258,11 +258,14 @@ namespace Custom.Zip
 
 			foreach (string s in sl)
 			{
-				if (s.EndsWith("/"));
+
+				if (s.EndsWith("/"))
+				{
 					temp = s.Remove(s.Length - 1);
-				// last index returns -1 if string not found
-				position = temp.LastIndexOf("/");
-				target.Add(temp.Substring(position + 1));
+					// last index returns -1 if string not found
+					position = temp.LastIndexOf("/");
+					target.Add(temp.Substring(position + 1));
+				}
 			}
 			return target;
 		}
