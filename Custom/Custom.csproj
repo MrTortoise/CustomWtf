@@ -89,6 +89,7 @@
     <Compile Include="Dialogue\DialogueSelectDirectory.Designer.cs">
       <DependentUpon>DialogueSelectDirectory.cs</DependentUpon>
     </Compile>
+    <Compile Include="EventArgs\BoolEventArgs.cs" />
     <Compile Include="Exceptions\ArgumentInvalidPathFormatException.cs" />
     <Compile Include="ExtensionMethods\Extensions.cs" />
     <Compile Include="Interfaces\GCNoReferencesToRemoveException.cs" />
