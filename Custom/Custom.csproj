@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8E5EEA51-B1A7-4132-BD79-8A4B826FDF38}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -110,15 +110,19 @@
   <ItemGroup>
     <EmbeddedResource Include="Components\DirectoryFileTreeControl.resx">
       <DependentUpon>DirectoryFileTreeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\DirectoryListView.resx">
       <DependentUpon>DirectoryListView.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\ImageList.resx">
       <DependentUpon>ImageList.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogue\DialogueSelectDirectory.resx">
       <DependentUpon>DialogueSelectDirectory.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
