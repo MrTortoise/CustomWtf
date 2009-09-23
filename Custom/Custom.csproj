@@ -103,6 +103,8 @@
     <Compile Include="IO\FileIO.cs" />
     <Compile Include="Maths\RotationManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XML\IXMLTool.cs" />
+    <Compile Include="XML\XMLTool.cs" />
     <Compile Include="Zip\ZipFile.cs" />
     <Compile Include="Zip\ZipFileOpenException.cs" />
     <Compile Include="Zip\ZipItem.cs" />
